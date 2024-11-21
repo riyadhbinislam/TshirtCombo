@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat+Brush&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/output/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="">
+
+    <!-- Nav -->
+<section>
+    <div class="container py-8 flex justify-center items-center md:justify-between">
+            <a href="">
+                <img src="/Assets/Onnomatra_ Logo_Dark.png" alt="Onnomatra_Logo" class="h-10">
+            </a>
+
+            <button class="btn gap-4 border pl-6 p-1 group hidden md:flex ">
+                <span>অর্ডার করুন</span>
+                <img src="/Assets/icon/Button_Up_Arrow.svg" alt="" class="group-hover:hidden">
+                <img src="/Assets/icon/Button_Hover_Arrow.svg" alt="" class="group-hover:inline-block hidden">
+            </button>
+    </div>
+</section>
+
+    <!-- Hero -->
+<section>
+    <div class="container px-8 py-16 space-y-8">
+        <div class="space-y-3">
+            <h1 class="text-[40px] text-center md:text-6xl text-primary font-semibold">৩ পিস স্মার্ট টিশার্ট কম্বো <br> স্টাইল এবং সাশ্রয় একসাথে!</h1>
+            <p class="md:text-2xl font-semibold text-center w-3/4 tab:w-1/2 m-auto">টিশার্টগুলো ডিজাইন করা হয়েছে এমনভাবে, যা আপনাকে দেবে ফ্যাশন এবং কমফোর্টের নিখুঁত মিশ্রণ। এখন স্টাইলিশ হওয়া হবে আরও সহজ এবং বাজেট-ফ্রেন্ডলি।</p>
+        </div>
+
+        <div class="flex flex-row justify-center gap-3">
+            <button class="bg-primary text-white py-1 px-6 btn border leading-8 hover:bg-blue-900">
+                অর্ডার করুন
+            </button>
+
+            <button class="btn gap-4 border pl-6 p-1 group">
+                <span>ভিডিও দেখুন</span>
+                <img src="/Assets/icon/Button_Play_Icon.svg" alt="" class="group-hover:hidden">
+                <img src="/Assets/icon/Button_Play_Dark.svg" alt="" class="group-hover:inline-block hidden" >
+            </button>
+
+        </div>
+
+        <div>
+               <!--HTML CODE-->
+        <!-- <div class="w-full relative">
+          <div class="swiper multiple-slide-carousel swiper-container relative">
+            <div class="swiper-wrapper mb-16">
+                <div class="swiper-slide">
+                  <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                    <span class="text-2xl font-semibold text-indigo-600">Slide 1 </span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                    <span class="text-2xl font-semibold text-indigo-600">Slide 2 </span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                    <span class="text-2xl font-semibold text-indigo-600">Slide 3 </span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                    <span class="text-2xl font-semibold text-indigo-600">Slide 4 </span>
+                  </div>
+                </div>
+            </div>
+
+            <div class="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-12">
+                <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full  hover:bg-indigo-600 !-translate-x-16" data-carousel-prev>
+                  <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+
+                <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-indigo-600 !translate-x-16" data-carousel-next>
+                  <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+            </div>
+          </div>
+                  <script>
+                      var swiper = new Swiper(".multiple-slide-carousel", {
+                    loop: true,
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    navigation: {
+                      nextEl: ".multiple-slide-carousel .swiper-button-next",
+                      prevEl: ".multiple-slide-carousel .swiper-button-prev",
+                    },
+                    breakpoints: {
+                      1920: {
+                          slidesPerView: 3,
+                          spaceBetween: 30
+                      },
+                      1028: {
+                          slidesPerView: 2,
+                          spaceBetween: 30
+                      },
+                      990: {
+                          slidesPerView: 1,
+                          spaceBetween: 0
+                      }
+                    }
+                  });
+                  </script>
+
+        </div> -->
+</section>
+
+    <!-- Banner -->
+<section>
+    <div class="container px-8 py-16">
+        <div class="bg-blue-50 p-6 rounded-lg space-y-12 m-auto">
+            <div class="space-y-6 text-center">
+                <h3 class="text-3xl md:text-[56px] font-bold text-subText">🎉 মাত্র ১৬০০ টাকা 🎉</h3>
+                <img src="/Assets/icon/Ssubhead BgLine.svg" alt="" class="m-auto">
+                <h2 class="text-3xl text-center md:text-[56px] text-primary font-semibold font-inter leading-10">৩টি টিশার্ট পাচ্ছেন স্বল্প <br> মূল্যে স্পেশাল কম্বো অফারে</h2>
+            </div>
+
+            <button class="bg-primary text-white py-1 px-6 btn border leading-8 hover:bg-blue-900 m-auto">
+                অর্ডার করুন
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Quality -->
+<section>
+    <div class="container px-8 py-16 space-y-8">
+      <div class="md:grid md:grid-cols-2 md:gap-12 sm:space-y-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4 h-auto">
+          <!-- First image -->
+          <div class="row-span-2 bg-quality-one bg-no-repeat bg-cover bg-center rounded-xl py-[160px]">
+
+          </div>
+          <!-- Second image -->
+          <div class="row-span-1 bg-quality-two bg-no-repeat bg-cover bg-center rounded-xl py-[160px]">
+
+          </div>
+          <!-- Third image -->
+          <div class="row-span-1 bg-quality-three bg-no-repeat bg-cover bg-center rounded-xl py-[160px]">
+
+          </div>
+        </div>
+
+        <div class="space-y-6 h-auto">
+            <h2 class="text-[40px] mobile:text-[56px] text-primary font-semibold ">টিশার্টের গুণগত মান</h2>
+            <ul class="space-y-3 custom-checklist text-xl font-semibold">
+                <li>প্রতিটি টিশার্ট সিলিকন প্রিমিয়াম ওয়াশ করা, যা দিচ্ছে একটি অসাধারণ নরম অনুভূতি এবং স্টাইলিশ লুক। </li>
+                <li>কাপড় তৈরি হয়েছে ইমপোর্টেড শার্টিং ফাইন কটন দিয়ে, যা ১০০% খাঁটি কটন। </li>
+                <li>শতভাগ কটন হওয়ায় টিশার্টগুলো গরমের জন্য অত্যন্ত আরামদায়ক। </li>
+                <li>রং কখনো নষ্ট হবে না, তাই দীর্ঘদিন ধরে নতুনের মতোই দেখতে থাকবে, ইনশা-আল্লাহ। </li>
+                <li>প্রতিদিনের ব্যবহার থেকে শুরু করে বিশেষ মুহূর্তেও এই টিশার্ট আপনাকে রাখবে ফ্রেশ এবং কমফোর্টেবল। </li>
+            </ul>
+            <p class="text-primary font-bold text-xl">যারা স্টাইল, মান এবং আরামের সমন্বয় চান, তাদের জন্য এটি পারফেক্ট পছন্দ।</p>
+        </div>
+
+      </div>
+    </div>
+</section>
+
+    <!-- Size Chart -->
+
+<section>
+  <div class="container px-8 py-16 space-y-8">
+    <div class="space-y-6">
+      <h2 class="text-center text-[40px] mobile:text-[56px] text-primary font-semibold">আমাদের টিশার্টের সাইজ চার্ট</h2>
+      <img src="/Assets/SizeChart Combo.png" alt="" class="w-full h-full">
+    </div>
+  </div>
+</section>
+
+ <!-- Benefits -->
+
+ <section>
+   <div class="container px-8 py-16 space-y-8">
+     <div class="lg:flex flex-row justify-center gap-12 space-y-6">
+       <img  src="/Assets/Benefits.png" alt="">
+       <div class="space-y-6">
+         <h2 class="text-[40px] md:text-[56px] text-primary font-semibold">আমরা যেসব সুবিধা দিচ্ছি </h2>
+         <ul class="space-y-3 custom-checklist text-xl font-semibold">
+           <li>কোয়ালিটি চেক করার পর পেমেন্টের সুবিধা।</li>
+           <li>ক্লার গ্যারান্টি, ৭দিনের মধ্যে ফেরতযোগ্য।</li>
+           <li><span class="text-primary">রিটার্ন পলিসি:</span> পণ্য পছন্দ না হলে, সাথে সাথেই রিটার্ন দিন।</li>
+           <li><span class="text-primary">গিফট প্যাকেজিং অপশন:</span> আপনার প্রিয়জনের জন্য পারফেক্ট উপহার।</li>
+          </ul>
+          <p class="text-primary font-bold text-xl">📢 এই দামে এমন কোয়ালিটি আর কোথাও পাবেন না! স্টক সীমিত, তাই অর্ডার করুন এখনই!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Slider-->
+  <section>
+    <div class="container px-8 py-16 space-y-8">
+
+      <!-- Carousel wrapper -->
+      <div class="rounded-2xl relative bg-blue-50 px-12 py-9 ">
+        <!-- Item 1 -->
+
+        <div class="bg-white p-3  rounded-xl space-y-6 border">
+          <p class="font-semibold">প্রিমিয়াম কোয়ালিটি এবং দারুণ আরামদায়ক! আমি এর আগে এত ভালো মানের শার্ট কিনিনি। কাপড়টি নরম এবং আরামদায়ক। রং এবং ফিনিশিং সত্যিই প্রিমিয়াম। প্রায় সবাই আমার শার্টের প্রশংসা করেছে!</p>
+          <hr class="bg-slate-100">
+          <div class="flex flex-row gap-5">
+            <img src="/Assets/profile.png" alt="" class="rounded-full">
+            <div class="space-y-2">
+              <span class="font-semibold">আরিফুল ইসলাম, ঢাকা</span>
+              <span class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <p>(৪.৯/৫)</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <!-- <div class="duration-700 ease-in-out" data-carousel-item>
+          <div class="bg-white p-3 w-full rounded-xl space-y-6 border absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <p class="font-semibold">প্রিমিয়াম কোয়ালিটি এবং দারুণ আরামদায়ক! আমি এর আগে এত ভালো মানের শার্ট কিনিনি। কাপড়টি নরম এবং আরামদায়ক। রং এবং ফিনিশিং সত্যিই প্রিমিয়াম। প্রায় সবাই আমার শার্টের প্রশংসা করেছে!</p>
+            <hr class="bg-slate-100">
+            <div class="flex flex-row gap-5">
+              <img src="/Assets/profile.png" alt="" class="rounded-full">
+              <div class="space-y-2">
+                <span class="font-semibold">আরিফুল ইসলাম, ঢাকা</span>
+                <span class="flex flex-row gap-2 items-center">
+                  <i class="fa-solid fa-star text-orange-400"></i>
+                  <i class="fa-solid fa-star text-orange-400"></i>
+                  <i class="fa-solid fa-star text-orange-400"></i>
+                  <i class="fa-solid fa-star text-orange-400"></i>
+                  <i class="fa-solid fa-star text-orange-400"></i>
+                  <p>(4.9/5)</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Slider-->
+
+<section>
+  <div class="container px-8 py-16 space-y-8">
+
+    <div class="lg:flex justify-center gap-[100px] space-y-10">
+
+      <div class="space-y-3 text-center lg:text-left">
+        <h2 class="text-[40px] md:text-[56px] text-primary font-semibold ">প্রায়শই জিজ্ঞাসিত প্রশ্ন ?</h2>
+        <p class="font-semibold pb-9">আপনার প্রতিদিনের কমন প্রশ্নগুলো দেখে নিন।</p>
+        <button class="bg-primary text-white py-1 px-6 btn border leading-8 mx-auto lg:mx-0">
+          অর্ডার করুন
+        </button>
+      </div>
+
+
+
+      <div class="space-y-3">
+        <!-- Accordion Item 1 -->
+        <div class="border border-[#e0e0e0] px-6 py-3 rounded-2xl">
+          <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center text-left py-5 text-black text-xl font-semibold">
+            <span>শার্টের কাপড়ের মান কেমন?</span>
+            <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#3A3A3A"/>
+                <path d="M24.0044 17.414L15.3974 26.021L13.9834 24.607L22.5894 16H15.0044V14H26.0044V25H24.0044V17.414Z" fill="#FEFEFE"/>
+                </svg>
+            </span>
+          </button>
+          <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="text-left text-[#4d4d4d]">
+              আমাদের শার্টগুলো সিলিকন প্রিমিয়াম ওয়াশ করা এবং তৈরি হয়েছে ইমপোর্টেড ফাইন কটন দিয়ে। এটি ১০০% খাঁটি কটন, যা গরমের জন্য আরামদায়ক এবং রং নষ্ট হবে না।
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="border border-[#e0e0e0] px-6 py-3 rounded-2xl">
+          <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center text-left py-5 text-black text-xl font-semibold">
+            <span>প্রোডাক্ট হাতে পাওয়ার আগে কি পেমেন্ট করতে হবে?</span>
+            <span id="icon-2" class="text-slate-800 transition-transform duration-300">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#3A3A3A"/>
+                <path d="M24.0044 17.414L15.3974 26.021L13.9834 24.607L22.5894 16H15.0044V14H26.0044V25H24.0044V17.414Z" fill="#FEFEFE"/>
+                </svg>
+            </span>
+          </button>
+          <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="text-left text-[#4d4d4d]">
+              আমাদের শার্টগুলো সিলিকন প্রিমিয়াম ওয়াশ করা এবং তৈরি হয়েছে ইমপোর্টেড ফাইন কটন দিয়ে। এটি ১০০% খাঁটি কটন, যা গরমের জন্য আরামদায়ক এবং রং নষ্ট হবে না।
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="border border-[#e0e0e0] px-6 py-3 rounded-2xl">
+          <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center text-left py-5 text-black text-xl font-semibold">
+            <span>যদি শার্ট পছন্দ না হয়, তবে কী করব?</span>
+            <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#3A3A3A"/>
+                <path d="M24.0044 17.414L15.3974 26.021L13.9834 24.607L22.5894 16H15.0044V14H26.0044V25H24.0044V17.414Z" fill="#FEFEFE"/>
+                </svg>
+            </span>
+          </button>
+          <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="text-left text-[#4d4d4d]">
+              আমাদের শার্টগুলো সিলিকন প্রিমিয়াম ওয়াশ করা এবং তৈরি হয়েছে ইমপোর্টেড ফাইন কটন দিয়ে। এটি ১০০% খাঁটি কটন, যা গরমের জন্য আরামদায়ক এবং রং নষ্ট হবে না।
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="border border-[#e0e0e0] px-6 py-3 rounded-2xl">
+          <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center text-left py-5 text-black text-xl font-semibold">
+            <span>কত দিনের মধ্যে প্রোডাক্ট ডেলিভারি পাব?</span>
+            <span id="icon-4" class="text-slate-800 transition-transform duration-300">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#3A3A3A"/>
+                <path d="M24.0044 17.414L15.3974 26.021L13.9834 24.607L22.5894 16H15.0044V14H26.0044V25H24.0044V17.414Z" fill="#FEFEFE"/>
+                </svg>
+            </span>
+          </button>
+          <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="text-left text-[#4d4d4d]">
+              আমাদের শার্টগুলো সিলিকন প্রিমিয়াম ওয়াশ করা এবং তৈরি হয়েছে ইমপোর্টেড ফাইন কটন দিয়ে। এটি ১০০% খাঁটি কটন, যা গরমের জন্য আরামদায়ক এবং রং নষ্ট হবে না।
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 5 -->
+        <div class="border border-[#e0e0e0] px-6 py-3 rounded-2xl">
+          <button onclick="toggleAccordion(5)" class="w-full flex justify-between items-center text-left py-5 text-black text-xl font-semibold">
+            <span>প্রোডাক্টের সাথে কোনো অতিরিক্ত সুবিধা রয়েছে?</span>
+            <span id="icon-5" class="text-slate-800 transition-transform duration-300">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#3A3A3A"/>
+                <path d="M24.0044 17.414L15.3974 26.021L13.9834 24.607L22.5894 16H15.0044V14H26.0044V25H24.0044V17.414Z" fill="#FEFEFE"/>
+                </svg>
+            </span>
+          </button>
+          <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="text-left text-[#4d4d4d]">
+              আমাদের শার্টগুলো সিলিকন প্রিমিয়াম ওয়াশ করা এবং তৈরি হয়েছে ইমপোর্টেড ফাইন কটন দিয়ে। এটি ১০০% খাঁটি কটন, যা গরমের জন্য আরামদায়ক এবং রং নষ্ট হবে না।
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 6 -->
+        <div class="border border-[#e0e0e0] px-6 py-3 rounded-2xl">
+          <button onclick="toggleAccordion(6)" class="w-full flex justify-between items-center text-left py-5 text-black text-xl font-semibold">
+            <span>কিভাবে অর্ডার করতে পারি?</span>
+            <span id="icon-6" class="text-slate-800 transition-transform duration-300">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#3A3A3A"/>
+                <path d="M24.0044 17.414L15.3974 26.021L13.9834 24.607L22.5894 16H15.0044V14H26.0044V25H24.0044V17.414Z" fill="#FEFEFE"/>
+                </svg>
+            </span>
+          </button>
+          <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="text-left text-[#4d4d4d]">
+              আমাদের শার্টগুলো সিলিকন প্রিমিয়াম ওয়াশ করা এবং তৈরি হয়েছে ইমপোর্টেড ফাইন কটন দিয়ে। এটি ১০০% খাঁটি কটন, যা গরমের জন্য আরামদায়ক এবং রং নষ্ট হবে না।
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 7 -->
+        <div class="border border-[#e0e0e0] px-6 py-3 rounded-2xl">
+          <button onclick="toggleAccordion(7)" class="w-full flex justify-between items-center text-left py-5 text-black text-xl font-semibold">
+            <span>শার্টের রং কি ঠিক থাকবে?</span>
+            <span id="icon-7" class="text-slate-800 transition-transform duration-300">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#3A3A3A"/>
+                <path d="M24.0044 17.414L15.3974 26.021L13.9834 24.607L22.5894 16H15.0044V14H26.0044V25H24.0044V17.414Z" fill="#FEFEFE"/>
+                </svg>
+            </span>
+          </button>
+          <div id="content-7" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="text-left text-[#4d4d4d]">
+              আমাদের শার্টগুলো সিলিকন প্রিমিয়াম ওয়াশ করা এবং তৈরি হয়েছে ইমপোর্টেড ফাইন কটন দিয়ে। এটি ১০০% খাঁটি কটন, যা গরমের জন্য আরামদায়ক এবং রং নষ্ট হবে না।
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function toggleAccordion(index) {
+          const content = document.getElementById(`content-${index}`);
+          const icon = document.getElementById(`icon-${index}`);
+
+          // SVG for Minus icon
+          const minusSVG = `
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="20" fill="#3066B7"/>
+            <path d="M18.994 24.6826L18.994 12.5105L20.9937 12.5105L20.9944 24.6819L26.3578 19.3185L27.7721 20.7327L19.9939 28.5109L12.2157 20.7327L13.6299 19.3185L18.994 24.6826Z" fill="#FEFEFE"/>
+            </svg>
+          `;
+
+          // SVG for Plus icon
+          const plusSVG = `
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="20" fill="#3A3A3A"/>
+              <path d="M24.0044 17.414L15.3974 26.021L13.9834 24.607L22.5894 16H15.0044V14H26.0044V25H24.0044V17.414Z" fill="#FEFEFE"/>
+              </svg>
+          `;
+
+          // Toggle the content's max-height for smooth opening and closing
+          if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+            content.style.maxHeight = '0';
+            icon.innerHTML = plusSVG;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.innerHTML = minusSVG;
+          }
+        }
+      </script>
+
+    </div>
+
+
+
+
+  </div>
+</section>
+
+<!-- Banner -->
+<section>
+    <div class="container px-8 py-16">
+      <div class="bg-blue-50 p-6 rounded-lg space-y-12 m-auto lg:flex flex-row justify-center items-center">
+
+        <div class="space-y-3 text-center font-semibold lg:pr-[100px]">
+          <h2 class="text-[40px] md:text-[56px] text-primary  ">আমরা ২৪ ঘন্টা আপনার সাহায্যে</h2>
+          <p>যেকোনো প্রয়োজনে অথবা তথ্যের জন্য যোগাযোগ করুন আমাদের সাথে।</p>
+        </div>
+
+        <div class="space-y-12 md:flex justify-center items-center ">
+
+          <div  class="flex flex-col gap-6 justify-center items-center  md:border-r-gray-200 md:border-r lg:border-l" >
+              <a class="h-12" href="https://facebook.com" target="_blank">
+                <img src="/Assets/icon/Facebook.svg" alt="">
+              </a>
+              <a class="h-12" href="https://whatsapp.com" target="_blank">
+                <img src="/Assets/icon/WhatsApp.svg" alt="">
+              </a>
+              <a class="h-12" href="https://instagram.com" target="_blank">
+                <img src="/Assets/icon/Instagram.svg" alt="">
+              </a>
+          </div>
+
+          <hr class="w-[170px] border-b border-white  mt-4 mx-auto md:hidden">
+
+
+          <div class="space-y-3 w-fit mx-auto md:mx-0  md:pl-[100px]">
+            <img class="w-10 h-10" src="/Assets/icon/Helpline.png" alt="">
+            <div class="border-b border-black flex flex-row items-center gap-1">
+              <img src="/Assets/icon/phone.png" alt="">
+              <p class="text-2xl font-semibold">০১৬১১২৩০১৫২</p>
+            </div>
+            <div class="flex flex-row items-center gap-1">
+              <img src="/Assets/icon/phone.png" alt="">
+              <p class="text-2xl font-semibold">০১৬১১২৩০১৫২</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+</section>
+
+
+<!-- Checkout -->
+
+<section>
+  <div class="container min-h-[700px] px-8 py-16 bg-gradient-to-t from-primary from-0% to-white to-50% border border-gray-200 rounded-2xl relative">
+    <div class="space-y-3 text-center font-semibold lg:pr-[100px]">
+      <h2 class="text-[40px] md:text-[56px] text-primary  ">সঠিক ভাবে ফর্ম ফিলাপ করে অর্ডার করুন</h2>
+      <p>যেকোনো প্রয়োজনে অথবা তথ্যের জন্য যোগাযোগ করুন আমাদের সাথে।</p>
+    </div>
+    <!-- Checkout Form -->
+    <div class="w-[80%] border border-gray-300 p-12 rounded-lg mt-12 bg-white absolute -top-[50%] lg:-top-[20%]  left-1/2 transform -translate-x-1/2 translate-y-1/2 shadow-2xl mb-12">
+      <h3 class="text-3xl font-bold text-center pb-6">Checkout Your Order</h3>
+
+      <div class="lg:flex flex-row gap-12 ">
+          <div class="w-full">
+            <form action="" method="" class="space-y-4">
+
+              <div class="flex flex-col gap-2">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" class="w-full h-12 border border-gray-200 rounded-md p-2"/>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone" class="w-full h-12 border border-gray-200 rounded-md p-2"/>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="address">Your Address</label>
+                <input type="text" id="address" name="address" placeholder="Your Address" class="w-full h-12 border border-gray-200 rounded-md p-2"/>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="note">Order Notes (Optional)</label>
+                <input type="textarea" id="note" name="note" placeholder="Order Notes" row="30" col="5" class="w-full h-12 border border-gray-200 rounded-md p-2"/>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="w-full space-y-5 mt-8 lg:mt-0">
+
+              <div class="flex flex-row justify-between items-center font-semibold text-xl mb-12 border-b border-gray-200 pb-3">
+                <h3>Product</h3>
+                <h3>Subtotal</h3>
+              </div>
+
+
+              <div class="flex flex-row justify-between items-center  border-b border-gray-200 pb-3">
+                <div class="flex flex-row justify-start gap-10 items-center">
+
+                  <img src="/Assets/image/T-shirt Quality-3.png" alt="Product Image" class="w-20 h-20 rounded-md object-cover object-center bg-gray-200 dark:bg-gray-700"/>
+                  <div class="space-y-3">
+                    <h3 class="font-semibold">3Pcs Combo T-Shirts</h3>
+                    <div class="flex items-center justify-start">
+
+                      <button class=" min-h-6 min-w-6  group  border border-gray-200 rounded-l-lg flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50">
+                        <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.84344 1.82H0.163438V0.44H4.84344V1.82Z" fill="#1D242D"/>
+                          </svg>
+
+                      </button>
+
+                      <input type="text" class="leading-3 w-fit max-w-12  min-h-6 border-y border-gray-200 outline-none text-gray-900  placeholder:text-gray-900  text-center bg-transparent" placeholder="1">
+
+                      <button class="rounded-r-lg min-h-6 min-w-6 group border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50">
+                        <svg class="" width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.91266 5.42H5.17266V9.2H3.69266V5.42H0.112656V3.98H3.69266V0.2H5.17266V3.98H8.91266V5.42Z" fill="#1D242D"/>
+                          </svg>
+
+                      </button>
+
+                    </div>
+                  </div>
+
+                </div>
+                <p class="text-gray-400">TK1600</p>
+              </div>
+
+              <div class="border-b border-gray-200 pb-3  ">
+                <h3 class="pb-3">Size</h3>
+                <span class="flex flex-row items-center justify-start gap-2">
+                  <button class="border border-gray-200 rounded-lg px-3 py-2.5 bg-black text-white">S</button>
+                  <button class="border border-gray-200 rounded-lg px-3 py-2.5">M</button>
+                  <button class="border border-gray-200 rounded-lg px-3 py-2.5">L</button>
+                  <button class="border border-gray-200 rounded-lg px-3 py-2.5">XL</button>
+                  <button class="border border-gray-200 rounded-lg px-3 py-2.5">2XL</button>
+                  <button class="border border-gray-200 rounded-lg px-3 py-2.5">3xL</button>
+                </span>
+              </div>
+
+              <div class="border-b border-gray-200 pb-3  ">
+                <h3 class="pb-3">Delivery Charge</h3>
+
+                <div class="flex items-center mb-4">
+                  <input id="inside" type="radio" value="" name="inside" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="inside" class="ms-2 text-sm font-medium text-[#546881] dark:text-gray-300">Inside Dhaka (Tk60)</label>
+                </div>
+                <div class="flex items-center">
+                  <input checked id="outside" type="radio" value="" name="outside" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="outside" class="ms-2 text-sm font-medium text-[#546881] dark:text-gray-300">Outside Dhaka (Tk120)</label>
+                </div>
+
+              </div>
+
+              <div class="flex flex-row justify-between items-center font-semibold text-xl mb-12 border-b border-gray-200 pb-3">
+                <h3>Total</h3>
+                <h3>Tk 1600</h3>
+              </div>
+
+              <div class="border-b border-gray-200 pb-3  ">
+                <h3 class="pb-3">Payment Method</h3>
+                <div class="flex flex-row justify-start items-center gap-2 ">
+                  <a href="#"><img src="/Assets/icon/Cahs On Delivery.svg" alt=""></a>
+                  <a href="#"><img src="/Assets/icon/Bkash.svg" alt=""></a>
+                  <a href="#"><img src="/Assets/icon/Nagad.svg" alt=""></a>
+                  <a href="#"><img src="/Assets/icon/Rocket.svg" alt=""></a>
+                  <a href="#"><img src="/Assets/icon/Upay.svg" alt=""></a>
+                </div>
+                <div>
+                  <p class="w-full text-[#546881] border border-gray-200 rounded-lg px-6 py-3 mt-4 font-light">You select Cash on Delivery payment System</p>
+                </div>
+
+              </div>
+
+              <button class="bg-black text-white rounded-lg w-full font-normal px-6 py-3">Place Your Order</button>
+
+          </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+
+<section>
+  <div class="container px-8 py-16 ">
+    <div class="flex flex-col items-center justify-center">
+      <span>Copyright ©onnomatra.com</span>
+      <span>This website made with</span>
+      <img src="/Assets/Onnomatra Logo_color.png" alt="">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

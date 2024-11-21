@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**/
+
+/* Group utilities
+or
+custom created
+*/
+@layer components{
+
+    .btn{
+        @apply text-xl font-medium text-primary flex flex-row items-center border-primary rounded-full transition duration-300;
+    }
+
+
+
+}
